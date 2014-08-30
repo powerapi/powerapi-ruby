@@ -1,0 +1,464 @@
+{
+    "return": {
+        "@type": "ax290:ResultsVO",
+        "courseRequestRulesVO": {
+            "@nil": "true"
+        },
+        "studentDataVOs": {
+            "@type": "ax290:StudentDataVO",
+            "assignmentCategories": [
+                {
+                    "@type": "ax290:AsmtCatVO",
+                    "abbreviation": "S",
+                    "description": "Testing assignments",
+                    "id": 1,
+                    "name": "Sample"
+                }
+            ],
+            "assignmentScores": [
+                {
+                    "@type": "ax290:AssignmentScoreVO",
+                    "assignmentId": 1,
+                    "collected": false,
+                    "comment": {
+                        "@nil": "true"
+                    },
+                    "exempt": false,
+                    "id": 1,
+                    "late": false,
+                    "letterGrade": 100,
+                    "missing": false,
+                    "percent": 100,
+                    "score": 100,
+                    "scoretype": 0
+                }
+            ],
+            "assignments": [
+                {
+                    "@type": "ax290:AssignmentVO",
+                    "abbreviation": "8 20",
+                    "assignmentid": 1,
+                    "categoryId": 1,
+                    "description": "Sample Description",
+                    "dueDate": "2014-08-20T04:00:00.000Z",
+                    "id": 1,
+                    "includeinfinalgrades": 1,
+                    "name": "Sample Assignment",
+                    "pointspossible": 5,
+                    "publishDaysBeforeDue": 0,
+                    "publishState": 0,
+                    "publishonspecificdate": {
+                        "@nil": "true"
+                    },
+                    "publishscores": 1,
+                    "sectionid": 1,
+                    "type": 0,
+                    "weight": 1
+                }
+            ],
+            "attendance": [
+                {
+                    "@type": "ax290:AttendanceVO",
+                    "adaValueCode": 0,
+                    "adaValueTime": 0,
+                    "admValue": 0,
+                    "attCodeid": 504,
+                    "attComment": {
+                        "@nil": "true"
+                    },
+                    "attDate": "2014-08-19T04:00:00.000Z",
+                    "attFlags": 0,
+                    "attInterval": 0,
+                    "attModeCode": "ATT_ModeMeeting",
+                    "ccid": 1,
+                    "id": 1,
+                    "periodid": 1,
+                    "schoolid": 1,
+                    "studentid": 1,
+                    "totalMinutes": 0,
+                    "transactionType": {
+                        "@nil": "true"
+                    },
+                    "yearid": 2015
+                }
+            ],
+            "attendanceCodes": [
+                {
+                    "@type": "ax290:AttendanceCodeVO",
+                    "attCode": {
+                        "@nil": "true"
+                    },
+                    "codeType": 1,
+                    "description": "Present",
+                    "id": 509,
+                    "schoolid": 1,
+                    "sortorder": 1,
+                    "yearid": 2015
+                },
+                {
+                    "@type": "ax290:AttendanceCodeVO",
+                    "attCode": "T",
+                    "codeType": 1,
+                    "description": "Tardy Unexcused",
+                    "id": 508,
+                    "schoolid": 1,
+                    "sortorder": 2,
+                    "yearid": 2015
+                },
+                {
+                    "@type": "ax290:AttendanceCodeVO",
+                    "attCode": "ET",
+                    "codeType": 1,
+                    "description": "Tardy Excused",
+                    "id": 501,
+                    "schoolid": 1,
+                    "sortorder": 3,
+                    "yearid": 2015
+                },
+                {
+                    "@type": "ax290:AttendanceCodeVO",
+                    "attCode": "UA",
+                    "codeType": 2,
+                    "description": "Absence Unexcused",
+                    "id": 504,
+                    "schoolid": 1,
+                    "sortorder": 3,
+                    "yearid": 2015
+                },
+                {
+                    "@type": "ax290:AttendanceCodeVO",
+                    "attCode": "EA",
+                    "codeType": 2,
+                    "description": "Absence Excused",
+                    "id": 505,
+                    "schoolid": 1,
+                    "sortorder": 4,
+                    "yearid": 2015
+                },
+                {
+                    "@type": "ax290:AttendanceCodeVO",
+                    "attCode": "SI",
+                    "codeType": 2,
+                    "description": "Sick",
+                    "id": 503,
+                    "schoolid": 1,
+                    "sortorder": 5,
+                    "yearid": 2015
+                },
+                {
+                    "@type": "ax290:AttendanceCodeVO",
+                    "attCode": "OSS",
+                    "codeType": 2,
+                    "description": "Out-of-School Suspension",
+                    "id": 502,
+                    "schoolid": 1,
+                    "sortorder": 6,
+                    "yearid": 2015
+                },
+                {
+                    "@type": "ax290:AttendanceCodeVO",
+                    "attCode": "ISS",
+                    "codeType": 2,
+                    "description": "In-School Suspension",
+                    "id": 506,
+                    "schoolid": 1,
+                    "sortorder": 7,
+                    "yearid": 2015
+                },
+                {
+                    "@type": "ax290:AttendanceCodeVO",
+                    "attCode": "SA",
+                    "codeType": 1,
+                    "description": "School-Related Absence",
+                    "id": 507,
+                    "schoolid": 1,
+                    "sortorder": 8,
+                    "yearid": 2015
+                }
+            ],
+            "citizenCodes": [
+                {
+                    "@type": "ax290:CitizenCodeVO",
+                    "codeName": "H",
+                    "description": "Honorable",
+                    "id": 29,
+                    "sortOrder": 4
+                },
+                {
+                    "@type": "ax290:CitizenCodeVO",
+                    "codeName": "S",
+                    "description": "Satisfactory",
+                    "id": 30,
+                    "sortOrder": 5
+                },
+                {
+                    "@type": "ax290:CitizenCodeVO",
+                    "codeName": "N",
+                    "description": "Needs to improve",
+                    "id": 31,
+                    "sortOrder": 6
+                },
+                {
+                    "@type": "ax290:CitizenCodeVO",
+                    "codeName": "U",
+                    "description": "Unsatisfactory",
+                    "id": 32,
+                    "sortOrder": 7
+                },
+                {
+                    "@type": "ax290:CitizenCodeVO",
+                    "codeName": "E",
+                    "description": "Excellent",
+                    "id": 301,
+                    "sortOrder": 2
+                },
+                {
+                    "@type": "ax290:CitizenCodeVO",
+                    "codeName": "G",
+                    "description": "Good",
+                    "id": 302,
+                    "sortOrder": 3
+                },
+                {
+                    "@type": "ax290:CitizenCodeVO",
+                    "codeName": "C",
+                    "description": "Parental Conference Requested",
+                    "id": 303,
+                    "sortOrder": 1
+                }
+            ],
+            "feeBalance": {
+                "@nil": "true"
+            },
+            "finalGrades": [
+                {
+                    "@type": "ax290:FinalGradeVO",
+                    "commentValue": {
+                        "@nil": "true"
+                    },
+                    "dateStored": {
+                        "@nil": "true"
+                    },
+                    "grade": 100,
+                    "id": 1,
+                    "percent": 100,
+                    "reportingTermId": 1,
+                    "sectionid": 1,
+                    "storeType": 2
+                }
+            ],
+            "notificationSettingsVO": {
+                "@nil": "true"
+            },
+            "periods": [
+                {
+                    "@type": "ax290:PeriodVO",
+                    "abbreviation": 1,
+                    "id": 1,
+                    "name": 1,
+                    "periodNumber": 1,
+                    "schoolid": 1,
+                    "sortOrder": 1,
+                    "yearid": 2015
+                }
+            ],
+            "reportingTerms": [
+                {
+                    "@type": "ax290:ReportingTermVO",
+                    "abbreviation": "Q1",
+                    "endDate": "2014-10-17T04:00:00.000Z",
+                    "id": 1,
+                    "schoolid": 1,
+                    "sendingGrades": true,
+                    "startDate": "2014-08-18T04:00:00.000Z",
+                    "suppressGrades": false,
+                    "suppressPercents": false,
+                    "termid": 2401,
+                    "title": "Q1",
+                    "yearid": 2015
+                }
+            ],
+            "schools": {
+                "@type": "ax290:SchoolVO",
+                "abbreviation": "SCS",
+                "address": "Sample High School\r\n123 Apple Seed Road,\r\nSample, SA 00000",
+                "disabledFeatures": {
+                    "@type": "ax290:DisabledFeaturesVO",
+                    "activities": true,
+                    "assignments": false,
+                    "attendance": false,
+                    "citizenship": false,
+                    "currentGpa": false,
+                    "emailalerts": false,
+                    "fees": false,
+                    "finalGrades": false,
+                    "meals": false,
+                    "standards": false
+                },
+                "highGrade": 12,
+                "lowGrade": -3,
+                "mapMimeType": {
+                    "@nil": "true"
+                },
+                "name": "Sample High School",
+                "schoolId": 1,
+                "schoolMapModifiedDate": {
+                    "@nil": "true"
+                },
+                "schoolNumber": 1,
+                "schooladdress": "123 Apple Seed Road",
+                "schoolcity": "Sample",
+                "schoolcountry": {
+                    "@nil": "true"
+                },
+                "schoolfax": "+00000000000",
+                "schoolphone": "+00000000000",
+                "schoolstate": {
+                    "@nil": "true"
+                },
+                "schoolzip": 12345
+            },
+            "sections": [
+                {
+                    "@type": "ax290:SectionVO",
+                    "courseCode": 101,
+                    "description": {
+                        "@nil": "true"
+                    },
+                    "enrollments": {
+                        "@type": "ax290:SectionEnrollmentVO",
+                        "endDate": "2014-12-20T04:00:00.000Z",
+                        "enrollStatus": 0,
+                        "id": 1,
+                        "startDate": "2014-08-18T04:00:00.000Z"
+                    },
+                    "expression": "1 (M-F)",
+                    "id": 1,
+                    "roomName": "HS101",
+                    "schoolCourseTitle": "Sample Section",
+                    "schoolNumber": 1,
+                    "sectionNum": 1,
+                    "startStopDates": [
+                        {
+                            "@type": "ax290:StartStopDateVO",
+                            "sectionEnrollmentId": 1,
+                            "start": "2014-08-21T12:47:00.000Z",
+                            "stop": "2014-08-21T13:30:00.000Z"
+                        }
+                    ],
+                    "teacherID": 1,
+                    "termID": 2401
+                },
+                {
+                    "@type": "ax290:SectionVO",
+                    "courseCode": 102,
+                    "description": {
+                        "@nil": "true"
+                    },
+                    "enrollments": {
+                        "@type": "ax290:SectionEnrollmentVO",
+                        "endDate": "3000-12-20T04:00:00.000Z",
+                        "enrollStatus": 0,
+                        "id": 2,
+                        "startDate": "3000-08-18T04:00:00.000Z"
+                    },
+                    "expression": "2 (M-F)",
+                    "id": 2,
+                    "roomName": "HS101",
+                    "schoolCourseTitle": "Sample Future Section",
+                    "schoolNumber": 1,
+                    "sectionNum": 2,
+                    "startStopDates": [
+                        {
+                            "@type": "ax290:StartStopDateVO",
+                            "sectionEnrollmentId": 1,
+                            "start": "3000-08-21T12:47:00.000Z",
+                            "stop": "3000-08-21T13:30:00.000Z"
+                        }
+                    ],
+                    "teacherID": 1,
+                    "termID": 3000
+                },
+                {
+                    "@type": "ax290:SectionVO",
+                    "courseCode": 103,
+                    "description": {
+                        "@nil": "true"
+                    },
+                    "enrollments": {
+                        "@type": "ax290:SectionEnrollmentVO",
+                        "endDate": "2014-12-20T04:00:00.000Z",
+                        "enrollStatus": 0,
+                        "id": 3,
+                        "startDate": "2014-08-18T04:00:00.000Z"
+                    },
+                    "expression": "3 (M-F)",
+                    "id": 3,
+                    "roomName": "HS101",
+                    "schoolCourseTitle": "Sample Empty Section",
+                    "schoolNumber": 1,
+                    "sectionNum": 3,
+                    "startStopDates": [
+                        {
+                            "@type": "ax290:StartStopDateVO",
+                            "sectionEnrollmentId": 1,
+                            "start": "2014-08-21T12:47:00.000Z",
+                            "stop": "2014-08-21T13:30:00.000Z"
+                        }
+                    ],
+                    "teacherID": 1,
+                    "termID": 2401
+                }
+            ],
+            "student": {
+                "@type": "ax290:StudentVO",
+                "currentGPA": "4.0",
+                "currentMealBalance": 0,
+                "currentTerm": "S1",
+                "dcid": 1,
+                "dob": "1970-01-01T00:00:00.000Z",
+                "ethnicity": "US",
+                "firstName": "John",
+                "gender": "M",
+                "gradeLevel": 12,
+                "id": 1,
+                "lastName": "Doe",
+                "middleName": {
+                    "@nil": "true"
+                },
+                "photoDate": {
+                    "@nil": "true"
+                },
+                "startingMealBalance": 0
+            },
+            "studentDcid": 1,
+            "studentId": 1,
+            "teachers": [
+                {
+                    "@type": "ax290:TeacherVO",
+                    "email": "msue@example.edu",
+                    "firstName": "Mary",
+                    "id": 1,
+                    "lastName": "Sue",
+                    "schoolPhone": "+00000000000"
+                }
+            ],
+            "terms": [
+                {
+                    "@type": "ax290:TermVO",
+                    "abbrev": "S1",
+                    "endDate": "2014-12-20T04:00:00.000Z",
+                    "id": 2401,
+                    "parentTermId": 0,
+                    "schoolNumber": 1,
+                    "startDate": "2014-08-18T04:00:00.000Z",
+                    "title": "Semester 1"
+                }
+            ],
+            "yearId": 2015
+        },
+        "userSessionVO": {
+            "@nil": "true"
+        }
+    }
+}
