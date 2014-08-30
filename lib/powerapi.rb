@@ -1,4 +1,5 @@
 require "powerapi/exception.rb"
+require "powerapi/parser.rb"
 require "powerapi/version.rb"
 
 require "powerapi/assignment.rb"

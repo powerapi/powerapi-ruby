@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/powerapi/powerapi-ruby.svg?branch=master)](https://travis-ci.org/powerapi/powerapi-ruby)
 [![Coverage Status](https://img.shields.io/coveralls/powerapi/powerapi-ruby.svg)](https://coveralls.io/r/powerapi/powerapi-ruby)
+[![Code Climate](http://img.shields.io/codeclimate/github/powerapi/powerapi-ruby.png)](https://codeclimate.com/github/powerapi/powerapi-ruby)
+[![Gem Version](https://img.shields.io/gem/v/powerapi.svg)](https://rubygems.org/gems/powerapi)
 
 PowerAPI-ruby
 ============
@@ -14,6 +16,11 @@ Usage
 -----
 You should use [RubyGems](https://rubygems.org/) to handle including/downloading
 the library for you.
+
+```
+$ gem install powerapi
+```
+
 
 
 ## License
