@@ -1,1 +1,17 @@
-<?xml version='1.0' encoding='UTF-8'?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns:loginResponse xmlns:ns="http://publicportal.rest.powerschool.pearson.com/xsd"><return xmlns:ax284="http://vo.rest.powerschool.pearson.com/xsd" xmlns:ax287="http://model.rest.powerschool.pearson.com/xsd" xmlns:ax285="http://util.java/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ax284:ResultsVO"><messageVOs xsi:type="ax284:MessageVO"><description>Invalid Username or password</description><id xsi:nil="true" /><msgCode>1</msgCode><title>Invalid Login</title></messageVOs><courseRequestRulesVO xsi:nil="true" /><userSessionVO xsi:nil="true" /></return></ns:loginResponse></soapenv:Body></soapenv:Envelope>
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Body>
+    <ns:loginResponse xmlns:ns="http://publicportal.rest.powerschool.pearson.com/xsd">
+      <return xmlns:ax284="http://vo.rest.powerschool.pearson.com/xsd" xmlns:ax287="http://model.rest.powerschool.pearson.com/xsd" xmlns:ax285="http://util.java/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ax284:ResultsVO">
+        <messageVOs xsi:type="ax284:MessageVO">
+          <description>Invalid Username or password</description>
+          <id xsi:nil="true"/>
+          <msgCode>1</msgCode>
+          <title>Invalid Login</title>
+        </messageVOs>
+        <courseRequestRulesVO xsi:nil="true"/>
+        <userSessionVO xsi:nil="true"/>
+      </return>
+    </ns:loginResponse>
+  </soapenv:Body>
+</soapenv:Envelope>

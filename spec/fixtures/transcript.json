@@ -36,7 +36,7 @@
             "assignments": [
                 {
                     "@type": "ax290:AssignmentVO",
-                    "abbreviation": "8 20",
+                    "abbreviation": "Assignment",
                     "assignmentid": 1,
                     "categoryId": 1,
                     "description": "Sample Description",
