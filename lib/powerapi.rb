@@ -13,6 +13,14 @@ module PowerAPI
   module_function
 
   def authenticate(url, username, password, fetch_transcript=true)
+    if url[-1] == "/"
+      url = url[0..-2]
+    else
+      url = url
+    end
+
+    puts url
+
     soap_endpoint = url + "/pearson-rest/services/PublicPortalService"
 
     login_client = Savon.client(
