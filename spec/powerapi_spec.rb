@@ -34,4 +34,18 @@ describe PowerAPI do
       ).to be_an_instance_of(PowerAPI::Student)
     end
   end
+
+  describe "#clean_url" do
+    it "leaves 'https://powerschool.example' alone" do
+      expect(
+        PowerAPI.clean_url("https://powerschool.example")
+      ).to eq("https://powerschool.example")
+    end
+
+    it "removes the slash in 'https://powerschool.example/'" do
+      expect(
+      PowerAPI.clean_url("https://powerschool.example/")
+      ).to eq("https://powerschool.example")
+    end
+  end
 end
