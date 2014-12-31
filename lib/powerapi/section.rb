@@ -21,6 +21,10 @@ module PowerAPI
       @details[:assignments]
     end
 
+    def expression
+      @details[:section]["expression"]
+    end
+
     def final_grades
       @final_grades
     end

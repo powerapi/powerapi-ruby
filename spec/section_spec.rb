@@ -57,6 +57,20 @@ describe PowerAPI::Section do
     end
   end
 
+  describe "#expression" do
+    it "has an expression of '1 (M-F)' at index 0" do
+      expect(
+        @section0.expression
+      ).to eq("1 (M-F)")
+    end
+
+    it "has an expression of '3 (M-F)' at index 1" do
+      expect(
+      @section1.expression
+      ).to eq("3 (M-F)")
+    end
+  end
+
   describe "#final_grades" do
     it "has one final grade at index 0" do
       expect(
