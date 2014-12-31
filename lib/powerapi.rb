@@ -19,8 +19,6 @@ module PowerAPI
       url = url
     end
 
-    puts url
-
     soap_endpoint = url + "/pearson-rest/services/PublicPortalService"
 
     login_client = Savon.client(
