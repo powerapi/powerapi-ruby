@@ -81,6 +81,8 @@ module PowerAPI
         })
       end
 
+      sections = sections.sort_by{|section| [section.expression, section.name]}
+
       sections
     end
 
