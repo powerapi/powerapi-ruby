@@ -130,13 +130,13 @@ describe PowerAPI::Parser do
     it "contains a section at index 0" do
       expect(
         @sections[0]
-      ).to be_a(PowerAPI::Section)
+      ).to be_a(PowerAPI::Data::Section)
     end
 
     it "contains a section at index 1" do
       expect(
         @sections[0]
-      ).to be_a(PowerAPI::Section)
+      ).to be_a(PowerAPI::Data::Section)
     end
   end
 

@@ -2,9 +2,9 @@ require "powerapi/exception.rb"
 require "powerapi/parser.rb"
 require "powerapi/version.rb"
 
-require "powerapi/assignment.rb"
-require "powerapi/section.rb"
-require "powerapi/student.rb"
+require "powerapi/data/assignment.rb"
+require "powerapi/data/section.rb"
+require "powerapi/data/student.rb"
 
 require "savon"
 require "json"
@@ -31,7 +31,7 @@ module PowerAPI
 
     session = login.body[:login_response][:return][:user_session_vo]
 
-    return PowerAPI::Student.new(url, session, fetch_transcript)
+    return PowerAPI::Data::Student.new(url, session, fetch_transcript)
   end
 
   def clean_url(url)

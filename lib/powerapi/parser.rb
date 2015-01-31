@@ -8,7 +8,7 @@ module PowerAPI
           assignments[assignment["sectionid"]] = []
         end
 
-        assignments[assignment["sectionid"]] << PowerAPI::Assignment.new({
+        assignments[assignment["sectionid"]] << PowerAPI::Data::Assignment.new({
           :assignment => assignment,
           :category => assignment_categories[assignment["categoryId"]],
           :score => assignment_scores[assignment["id"]],
@@ -72,7 +72,7 @@ module PowerAPI
           next
         end
 
-        sections << PowerAPI::Section.new({
+        sections << PowerAPI::Data::Section.new({
           :assignments => assignments[section["id"]],
           :final_grades => final_grades[section["id"]],
           :reporting_terms => reporting_terms,

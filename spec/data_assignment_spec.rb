@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe PowerAPI::Assignment do
+describe PowerAPI::Data::Assignment do
   include Savon::SpecHelper
 
   before(:all) {
@@ -33,7 +33,7 @@ describe PowerAPI::Assignment do
 
     savon.expects(:get_student_data).with(message: message).returns(fixture)
 
-    student = PowerAPI::Student.new("http://powerschool.example", @session)
+    student = PowerAPI::Data::Student.new("http://powerschool.example", @session)
 
     @assignment = student.sections[0].assignments[0]
   }

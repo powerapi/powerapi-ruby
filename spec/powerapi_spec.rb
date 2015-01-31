@@ -31,7 +31,7 @@ describe PowerAPI do
 
       expect(
         PowerAPI.authenticate("http://powerschool.example", "student", "123456", false)
-      ).to be_an_instance_of(PowerAPI::Student)
+      ).to be_an_instance_of(PowerAPI::Data::Student)
     end
   end
 

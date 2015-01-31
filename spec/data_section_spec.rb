@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe PowerAPI::Section do
+describe PowerAPI::Data::Section do
   include Savon::SpecHelper
 
   before(:all) {
@@ -33,7 +33,7 @@ describe PowerAPI::Section do
 
     savon.expects(:get_student_data).with(message: message).returns(fixture)
 
-    student = PowerAPI::Student.new("http://powerschool.example", @session)
+    student = PowerAPI::Data::Student.new("http://powerschool.example", @session)
 
     @section0 = student.sections[0]
     @section1 = student.sections[1]
@@ -50,10 +50,10 @@ describe PowerAPI::Section do
       ).to be(1)
     end
 
-    it "has a PowerAPI::Assignment instance at index 0" do
+    it "has a PowerAPI::Data::Assignment instance at index 0" do
       expect(
         @section0.assignments[0]
-      ).to be_an_instance_of(PowerAPI::Assignment)
+      ).to be_an_instance_of(PowerAPI::Data::Assignment)
     end
   end
 

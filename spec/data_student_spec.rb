@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe PowerAPI::Student do
+describe PowerAPI::Data::Student do
   include Savon::SpecHelper
 
   before(:all) {
@@ -15,7 +15,7 @@ describe PowerAPI::Student do
 
   describe "#initialize" do
     before(:each) {
-      @student = PowerAPI::Student.new("http://powerschool.example", @session, false)
+      @student = PowerAPI::Data::Student.new("http://powerschool.example", @session, false)
     }
 
     after(:each) {
@@ -56,7 +56,7 @@ describe PowerAPI::Student do
 
       savon.expects(:get_student_data).with(message: message).returns(fixture)
 
-      student = PowerAPI::Student.new("http://powerschool.example", @session, false)
+      student = PowerAPI::Data::Student.new("http://powerschool.example", @session, false)
 
       transcript = student.fetch_transcript["return"]["studentDataVOs"]
 
@@ -73,7 +73,7 @@ describe PowerAPI::Student do
       fixture = File.read("spec/fixtures/transcript.json")
       fixture = JSON.parse(fixture)
 
-      @student = PowerAPI::Student.new("http://powerschool.example", @session, false)
+      @student = PowerAPI::Data::Student.new("http://powerschool.example", @session, false)
 
       @student.parse_transcript(fixture)
     }
