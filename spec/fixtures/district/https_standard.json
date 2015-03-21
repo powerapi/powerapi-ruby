@@ -1,0 +1,1 @@
+{"district":{"id":1,"code":"SMPL","name":"Sample District","number":"SaMpLeDiStRiCt","state":"CA","city":"Lincoln","zip":96669,"server":{"apiVersion":"2.1.1","portNumber":443,"serverAddress":"powerschool.example","sslEnabled":true},"validated":true,"remoteAuthDisabled":false,"remoteAuthMsg":""}}

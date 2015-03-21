@@ -41,4 +41,37 @@ module PowerAPI
       url = url
     end
   end
+
+  def district_lookup(code)
+    request = HTTPI::Request.new("https://powersource.pearsonschoolsystems.com/services/rest/remote-device/v2/get-district/" + code)
+    request.headers = { "Accept" => "application/json" }
+
+    details = HTTPI.get(request)
+
+    if details.error?
+      return false
+    end
+
+    details = JSON.parse(details.body)
+
+    district_lookup_url(details["district"]["server"])
+  end
+
+  def district_lookup_url(district_server)
+    if district_server["sslEnabled"] == true
+      url = "https://"
+    else
+      url = 'http://'
+    end
+
+    url += district_server["serverAddress"]
+
+    if (district_server["sslEnabled"] == true and district_server["portNumber"] != 443) or
+        (district_server["sslEnabled"] == false and district_server["portNumber"] != 80)
+
+        url += ":" + district_server["portNumber"].to_s
+    end
+
+    url
+  end
 end

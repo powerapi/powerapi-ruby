@@ -48,4 +48,55 @@ describe PowerAPI do
       ).to eq("https://powerschool.example")
     end
   end
+
+  describe "#district_lookup" do
+    it "doesn't find a district" do
+      stub_request(:get, /powersource.pearsonschoolsystems.com/).
+        to_return(status: 404, body: "", headers: {})
+
+      expect(
+        PowerAPI.district_lookup('SMPL')
+      ).to eq(false)
+    end
+
+    it "finds an HTTPS district" do
+      fixture = File.read("spec/fixtures/district/https_standard.json")
+      stub_request(:get, /powersource.pearsonschoolsystems.com/).
+        to_return(status: 200, body: fixture, headers: {})
+
+      expect(
+        PowerAPI.district_lookup('SMPL')
+      ).to eq("https://powerschool.example")
+    end
+
+    it "finds an nonstandard HTTPS district" do
+      fixture = File.read("spec/fixtures/district/https_nonstandard.json")
+      stub_request(:get, /powersource.pearsonschoolsystems.com/).
+        to_return(status: 200, body: fixture, headers: {})
+
+      expect(
+        PowerAPI.district_lookup('SMPL')
+      ).to eq("https://powerschool.example:8181")
+    end
+
+    it "finds an HTTP district" do
+      fixture = File.read("spec/fixtures/district/http_standard.json")
+      stub_request(:get, /powersource.pearsonschoolsystems.com/).
+        to_return(status: 200, body: fixture, headers: {})
+
+      expect(
+        PowerAPI.district_lookup('SMPL')
+      ).to eq("http://powerschool.example")
+    end
+
+    it "finds an nonstandard HTTP district" do
+      fixture = File.read("spec/fixtures/district/http_nonstandard.json")
+      stub_request(:get, /powersource.pearsonschoolsystems.com/).
+        to_return(status: 200, body: fixture, headers: {})
+
+      expect(
+        PowerAPI.district_lookup('SMPL')
+      ).to eq("http://powerschool.example:8080")
+    end
+  end
 end

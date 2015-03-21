@@ -13,3 +13,6 @@ end
 require "powerapi"
 
 require "savon/mock/spec_helper"
+
+require 'webmock/rspec'
+WebMock.disable_net_connect!(allow_localhost: true)
