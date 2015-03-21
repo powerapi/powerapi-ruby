@@ -1,5 +1,5 @@
 [![Build Status](https://img.shields.io/travis/powerapi/powerapi-ruby.svg?style=flat-square&branch=master)](https://travis-ci.org/powerapi/powerapi-ruby)
-[![Coverage Status](http://img.shields.io/codeclimate/coverage/github/powerapi/powerapi-ruby.svg?style=flat-square)](https://coveralls.io/r/powerapi/powerapi-ruby)
+[![Coverage Status](https://img.shields.io/coveralls/powerapi/powerapi-ruby.svg?style=flat-square)](https://coveralls.io/r/powerapi/powerapi-ruby)
 [![Code Climate](http://img.shields.io/codeclimate/github/powerapi/powerapi-ruby.svg?style=flat-square)](https://codeclimate.com/github/powerapi/powerapi-ruby)
 [![Gem Version](https://img.shields.io/gem/v/powerapi.svg?style=flat-square)](https://rubygems.org/gems/powerapi)
 
